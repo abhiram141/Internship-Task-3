@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Tracker</title>
+    <link rel="stylesheet" href="application.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Application Tracker</h1>
+        <form id="application-form">
+            <input type="text" id="company-name" placeholder="Company Name" required>
+            <input type="text" id="position" placeholder="Position" required>
+            <input type="date" id="application-date" required>
+            <select id="status">
+                <option value="Applied">Applied</option>
+                <option value="Interview Scheduled">Interview Scheduled</option>
+                <option value="Offer Received">Offer Received</option>
+                <option value="Rejected">Rejected</option>
+            </select>
+            <button type="submit">Add Application</button>
+        </form>
+
+        <div class="applications-list">
+            <h2>Your Applications</h2>
+            <ul id="applications">
+                <!-- Applications will be listed here -->
+            </ul>
+        </div>
+    </div>
+
+    <script src="application.js"></script>
+</body>
+</html>
